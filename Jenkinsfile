@@ -23,8 +23,4 @@ pipeline {
       }
     }
   }
-  triggers {
-    githubWebHook()
-    pollSCM('H/15 * * * *')
-  }
 }
