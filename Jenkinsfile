@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Push to Docker Hub') {
             steps {
-                sh 'docker login -u $DOCKER_HUB_USERNAME -p $DOCKER_HUB_PASSWORD'
+                sh 'docker login -u ferremaes -p PDG2002m'
                 sh 'docker push my-app'
             }
         }
